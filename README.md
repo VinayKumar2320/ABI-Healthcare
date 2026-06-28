@@ -1,4 +1,4 @@
-# 🩹 Medicare Part B Wound Care Billing Triage & Analytics Platform
+# 🩹 Medicare Part B Wound Care Billing Triage & Analytics Platform 
 
 This platform is an automated clinical data pipeline and analytics dashboard designed for a post-acute care company. It pulls patient data from a mock PointClickCare (PCC) EHR API, extracts clinical wound details, validates them against Medicare Part B billing compliance rules, and presents them in an interactive, insights-driven dashboard for medical billing specialists.
 
