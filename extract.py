@@ -1,5 +1,6 @@
 import os
 import json
+import re
 import pandas as pd
 import logging
 from typing import List, Optional
@@ -20,6 +21,7 @@ logging.basicConfig(
 DATA_DIR = "data"
 INPUT_FILE = os.path.join(DATA_DIR, "raw_patient_data.pkl")
 OUTPUT_FILE = os.path.join(DATA_DIR, "extracted_patient_data.pkl")
+CACHE_FILE_JSON = os.path.join(DATA_DIR, "clinical_keyword_cache.json")
 
 # Pydantic schemas for structured extraction
 class WoundProfile(BaseModel):
@@ -41,6 +43,100 @@ def get_gemini_client():
     if not api_key:
         raise ValueError("GEMINI_API_KEY environment variable is not set.")
     return genai.Client(api_key=api_key)
+
+def extract_via_keywords_and_regex(text: str) -> Optional[List[dict]]:
+    """
+    Attempts to extract a complete wound profile from free-text notes 
+    using deterministic regex and keyword matching to save LLM tokens.
+    """
+    text_lower = text.lower()
+    
+    # 1. Check for multiple wounds (if we see multiple distinct wound types, we abort to let LLM handle)
+    wound_types_found = set()
+    for wt in ["pressure ulcer", "diabetic foot ulcer", "diabetic ulcer", "venous ulcer", "venous stasis", "arterial", "surgical site", "abscess", "burn"]:
+        if wt in text_lower:
+            wound_types_found.add(wt)
+    if len(wound_types_found) > 1:
+        return None  # Too complex, let LLM handle
+        
+    # 2. Extract Wound Type
+    wound_type = "Unknown"
+    if "pressure ulcer" in text_lower or "pressure injury" in text_lower:
+        wound_type = "Pressure Ulcer"
+    elif "diabetic" in text_lower:
+        wound_type = "Diabetic Foot Ulcer"
+    elif "venous" in text_lower:
+        wound_type = "Venous Stasis Ulcer"
+    elif "arterial" in text_lower:
+        wound_type = "Arterial Ulcer"
+    elif "surgical" in text_lower:
+        wound_type = "Surgical Site Infection"
+    elif "abscess" in text_lower:
+        wound_type = "Abscess"
+    elif "burn" in text_lower:
+        wound_type = "Burn"
+    elif wound_types_found:
+        wound_type = list(wound_types_found)[0].title()
+        
+    # 3. Extract Stage (for pressure ulcers)
+    stage = None
+    if wound_type == "Pressure Ulcer":
+        stage_match = re.search(r"stage\s*[:\-]?\s*([234]|unstageable)", text_lower)
+        if stage_match:
+            stage = stage_match.group(1).upper()
+            
+    # 4. Extract Location
+    location = "Unknown"
+    locations = ["sacrum", "heel", "foot", "leg", "hip", "malleolus", "toe", "ankle", "buttock", "thigh", "calf"]
+    loc_found = []
+    for loc in locations:
+        if loc in text_lower:
+            loc_found.append(loc)
+    if len(loc_found) == 1:
+        location = loc_found[0].title()
+    elif len(loc_found) > 1:
+        laterality = ""
+        if "left" in text_lower:
+            laterality = "Left "
+        elif "right" in text_lower:
+            laterality = "Right "
+        location = laterality + " / ".join([l.title() for l in loc_found])
+        
+    # 5. Extract Dimensions (L x W x D)
+    dims_match = re.search(r"(?:meas(?:ures)?\s*)?(\d+\.?\d*)\s*(?:cm)?\s*x\s*(\d+\.?\d*)\s*(?:cm)?(?:\s*x\s*(\d+\.?\d*)\s*(?:cm)?)?", text_lower)
+    length_cm = None
+    width_cm = None
+    depth_cm = None
+    if dims_match:
+        try:
+            length_cm = float(dims_match.group(1))
+            width_cm = float(dims_match.group(2))
+            if dims_match.group(3):
+                depth_cm = float(dims_match.group(3))
+        except ValueError:
+            pass
+            
+    # 6. Extract Drainage Amount
+    drainage_amount = None
+    for amt in ["none", "light", "moderate", "heavy", "minimal", "copious"]:
+        if amt in text_lower:
+            drainage_amount = amt
+            break
+            
+    # We only return a profile if we got a highly confident extraction (wound type, location, and dimensions)
+    if wound_type != "Unknown" and location != "Unknown" and length_cm is not None and width_cm is not None:
+        return [{
+            "wound_type": wound_type,
+            "stage": stage,
+            "location": location,
+            "length_cm": length_cm,
+            "width_cm": width_cm,
+            "depth_cm": depth_cm,
+            "drainage_amount": drainage_amount,
+            "is_primary_wound": True
+        }]
+        
+    return None
 
 def extract_from_assessment(assessments) -> Optional[List[dict]]:
     """
@@ -101,7 +197,6 @@ def extract_from_assessment(assessments) -> Optional[List[dict]]:
             # 1. Style B: Wound narrative
             if "Wound narrative" in qa:
                 narrative = qa["Wound narrative"]
-                import re
                 parts = [p.strip() for p in narrative.split('/')]
                 wound_type = "Unknown"
                 location = "Unknown"
@@ -117,8 +212,7 @@ def extract_from_assessment(assessments) -> Optional[List[dict]]:
                         wound_type = subparts[0].strip()
                         location = subparts[1].strip()
                     elif "Measures" in part:
-                        # Extract dimensions (e.g. "Measures 2.9 cm x 2.8 cm" or "Measures 4.2x3.1x1.5cm")
-                        # Find all numbers (including floats)
+                        # Extract dimensions
                         nums = re.findall(r"\d+\.?\d*", part)
                         if len(nums) >= 2:
                             length_cm = float(nums[0])
@@ -260,6 +354,16 @@ def run_extraction():
         logging.warning("Proceeding, but LLM extraction will fail if needed. Please ensure GEMINI_API_KEY is set.")
         client = None
 
+    # Load persistent keyword cache
+    cache_data = {}
+    if os.path.exists(CACHE_FILE_JSON):
+        try:
+            with open(CACHE_FILE_JSON, "r") as f:
+                cache_data = json.load(f)
+            logging.info(f"Loaded {len(cache_data)} cached profiles from {CACHE_FILE_JSON}")
+        except Exception as e:
+            logging.error(f"Failed to load keyword cache: {e}")
+
     extracted_wounds = []
     source_used_list = []
 
@@ -272,44 +376,77 @@ def run_extraction():
             source_used_list.append("Skipped (Pre-rejected)")
             continue
 
-        logging.info(f"Extracting wound data for patient {patient_id}...")
-        
-        # 1. Try Assessment
-        wounds = extract_from_assessment(row.get("assessments"))
-        if wounds:
-            extracted_wounds.append(wounds)
-            source_used_list.append("Assessment (Structured)")
-            logging.info(f"Successfully extracted from structured assessment for {patient_id}.")
+        # Generate unique cache key based on patient_id and last_modified_at
+        last_modified = row.get("last_modified_at")
+        if isinstance(last_modified, pd.Timestamp):
+            last_modified_str = last_modified.isoformat()
+        else:
+            last_modified_str = str(last_modified)
+            
+        cache_key = f"{patient_id}_{last_modified_str}"
+
+        # 1. Check persistent cache
+        if cache_key in cache_data:
+            cached_entry = cache_data[cache_key]
+            extracted_wounds.append(cached_entry["wounds"])
+            source_used_list.append("Cached Profile")
+            logging.info(f"Reusing cached profile for {patient_id} (0 tokens used).")
             continue
 
-        # 2. Try Notes
-        notes = row.get("notes")
-        if notes:
-            # Sort notes by effective_date descending to get the latest
-            valid_notes = sorted(
-                notes,
-                key=lambda x: x.get("effective_date") or "",
-                reverse=True
-            )
-            if valid_notes:
-                latest_note = valid_notes[0]
-                note_text = latest_note.get("note_text")
-                if note_text and client:
-                    try:
-                        wounds = extract_from_note_with_llm(client, note_text)
-                        extracted_wounds.append(wounds)
-                        source_used_list.append("Progress Note (Gemini Extracted)")
-                        logging.info(f"Successfully extracted from note using Gemini for {patient_id}. Found {len(wounds)} wounds.")
-                        continue
-                    except Exception as e:
-                        logging.error(f"Error during LLM extraction for {patient_id}: {e}")
-                elif note_text:
-                    logging.warning(f"No Gemini client available. Cannot extract from note for {patient_id}.")
+        logging.info(f"Extracting wound data for patient {patient_id}...")
+        wounds = None
+        source_used = "None"
         
-        # 3. Fallback: No data
-        extracted_wounds.append([])
-        source_used_list.append("None")
-        logging.warning(f"No wound data could be extracted for patient {patient_id}.")
+        # 2. Try Assessment (structured - 0 tokens)
+        wounds = extract_from_assessment(row.get("assessments"))
+        if wounds:
+            source_used = "Assessment (Structured)"
+            logging.info(f"Successfully extracted from structured assessment for {patient_id} (0 tokens used).")
+        else:
+            # 3. Try local keyword & regex parser on notes (0 tokens)
+            notes = row.get("notes")
+            if notes:
+                valid_notes = sorted(notes, key=lambda x: x.get("effective_date") or "", reverse=True)
+                if valid_notes:
+                    latest_note = valid_notes[0]
+                    note_text = latest_note.get("note_text")
+                    if note_text:
+                        # Attempt local regex/keyword match
+                        wounds = extract_via_keywords_and_regex(note_text)
+                        if wounds:
+                            source_used = "Progress Note (Regex Extracted)"
+                            logging.info(f"Successfully extracted from note via local regex/keywords for {patient_id} (0 tokens used).")
+
+                        # 4. Fallback to Gemini 2.5 Pro (LLM tokens used)
+                        elif client:
+                            try:
+                                wounds = extract_from_note_with_llm(client, note_text)
+                                source_used = "Progress Note (Gemini Extracted)"
+                                logging.info(f"Extracted from note using Gemini 2.5 Pro for {patient_id} (Tokens consumed).")
+                            except Exception as e:
+                                logging.error(f"Error during LLM extraction for {patient_id}: {e}")
+
+        if not wounds:
+            wounds = []
+            source_used = "None"
+            logging.warning(f"No wound data could be extracted for patient {patient_id}.")
+
+        # Save to cache
+        cache_data[cache_key] = {
+            "wounds": wounds,
+            "source_used": source_used
+        }
+
+        extracted_wounds.append(wounds)
+        source_used_list.append(source_used)
+
+    # Save updated cache back to disk
+    try:
+        with open(CACHE_FILE_JSON, "w") as f:
+            json.dump(cache_data, f, indent=2)
+        logging.info(f"Saved updated cache to {CACHE_FILE_JSON}")
+    except Exception as e:
+        logging.error(f"Failed to save keyword cache: {e}")
 
     df["extracted_wounds"] = extracted_wounds
     df["source_used"] = source_used_list

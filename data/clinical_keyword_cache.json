@@ -1,0 +1,2177 @@
+{
+  "FA-001_2026-05-17T19:13:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "3",
+        "location": "Right hip",
+        "length_cm": 2.9,
+        "width_cm": 2.8,
+        "depth_cm": null,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-003_2026-05-17T16:13:00": {
+    "wounds": [
+      {
+        "wound_type": "Venous",
+        "stage": null,
+        "location": "Bilateral Right lower leg",
+        "length_cm": 8.0,
+        "width_cm": 3.5,
+        "depth_cm": 0.2,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-005_2026-05-17T13:56:00": {
+    "wounds": [
+      {
+        "wound_type": "Venous",
+        "stage": "N",
+        "location": "Right lower leg",
+        "length_cm": 3.1,
+        "width_cm": 3.4,
+        "depth_cm": null,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-006_2026-05-17T16:50:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Left foot",
+        "length_cm": 2.7,
+        "width_cm": 1.5,
+        "depth_cm": 1.1,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-009_2026-05-17T01:54:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": "N",
+        "location": "Left foot",
+        "length_cm": 5.3,
+        "width_cm": 4.5,
+        "depth_cm": null,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-011_2026-05-17T03:16:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "Stage 2",
+        "location": "Right Sacral region",
+        "length_cm": 1.2,
+        "width_cm": 1.5,
+        "depth_cm": 0.4,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-012_2026-05-17T16:36:00": {
+    "wounds": [
+      {
+        "wound_type": "Abscess",
+        "stage": null,
+        "location": "Right cervical",
+        "length_cm": 1.2,
+        "width_cm": 0.7,
+        "depth_cm": 0.2,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-013_2026-03-29T08:59:00": {
+    "wounds": [
+      {
+        "wound_type": "Abscess",
+        "stage": "N",
+        "location": "Right cervical",
+        "length_cm": 1.4,
+        "width_cm": 1.2,
+        "depth_cm": null,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-016_2026-01-31T23:15:00": {
+    "wounds": [
+      {
+        "wound_type": "Venous",
+        "stage": "N",
+        "location": "Right lower leg",
+        "length_cm": 7.6,
+        "width_cm": 4.2,
+        "depth_cm": null,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-017_2025-12-06T11:32:00": {
+    "wounds": [
+      {
+        "wound_type": "Venous",
+        "stage": null,
+        "location": "Left lower leg",
+        "length_cm": 6.3,
+        "width_cm": 5.7,
+        "depth_cm": 0.2,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-020_2026-04-18T14:14:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Bilateral Left plantar",
+        "length_cm": 3.2,
+        "width_cm": 2.3,
+        "depth_cm": 0.6,
+        "drainage_amount": "none",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-021_2025-12-19T15:39:00": {
+    "wounds": [
+      {
+        "wound_type": "Arterial",
+        "stage": null,
+        "location": "Right lower extremity",
+        "length_cm": 2.6,
+        "width_cm": 1.3,
+        "depth_cm": 0.5,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-023_2025-12-27T22:23:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Left Right plantar",
+        "length_cm": 4.1,
+        "width_cm": 3.6,
+        "depth_cm": 0.7,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-024_2026-01-31T08:53:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "Stage 3",
+        "location": "Right buttock",
+        "length_cm": 6.8,
+        "width_cm": 4.4,
+        "depth_cm": 1.6,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-025_2026-04-06T13:45:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "Stage 4",
+        "location": "Right Left heel",
+        "length_cm": 5.3,
+        "width_cm": 7.3,
+        "depth_cm": 2.3,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-026_2025-12-06T14:31:00": {
+    "wounds": [
+      {
+        "wound_type": "Surgical",
+        "stage": null,
+        "location": "Right Abdominal wall",
+        "length_cm": 3.8,
+        "width_cm": 2.2,
+        "depth_cm": 1.8,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-027_2025-12-29T20:13:00": {
+    "wounds": [
+      {
+        "wound_type": "Abscess",
+        "stage": null,
+        "location": "Right cervical",
+        "length_cm": 0.8,
+        "width_cm": 1.1,
+        "depth_cm": 0.6,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-034_2026-03-13T14:33:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "2",
+        "location": "Left heel",
+        "length_cm": 3.0,
+        "width_cm": 2.2,
+        "depth_cm": null,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-038_2026-03-18T07:51:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Right Left plantar",
+        "length_cm": 3.1,
+        "width_cm": 1.7,
+        "depth_cm": 0.3,
+        "drainage_amount": "none",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-039_2025-12-08T06:54:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Bilateral Right plantar",
+        "length_cm": 1.4,
+        "width_cm": 1.7,
+        "depth_cm": 0.7,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-040_2026-03-17T20:35:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": "N",
+        "location": "Right plantar",
+        "length_cm": 3.0,
+        "width_cm": 0.9,
+        "depth_cm": null,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-041_2025-12-05T03:14:00": {
+    "wounds": [
+      {
+        "wound_type": "Arterial",
+        "stage": null,
+        "location": "Bilateral Right lower extremity",
+        "length_cm": 1.3,
+        "width_cm": 0.8,
+        "depth_cm": 0.8,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-043_2026-01-07T08:49:00": {
+    "wounds": [
+      {
+        "wound_type": "Abscess",
+        "stage": null,
+        "location": "Left Right cervical",
+        "length_cm": 1.9,
+        "width_cm": 0.6,
+        "depth_cm": 0.4,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-044_2026-01-10T16:32:00": {
+    "wounds": [
+      {
+        "wound_type": "Burn",
+        "stage": null,
+        "location": "Bilateral Left upper arm",
+        "length_cm": 2.8,
+        "width_cm": 1.8,
+        "depth_cm": 0.1,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-047_2026-02-18T00:24:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Bilateral Right plantar",
+        "length_cm": 2.2,
+        "width_cm": 1.0,
+        "depth_cm": 1.4,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-048_2026-01-24T03:55:00": {
+    "wounds": [
+      {
+        "wound_type": "Venous",
+        "stage": null,
+        "location": "Left lower leg",
+        "length_cm": 5.4,
+        "width_cm": 5.4,
+        "depth_cm": 0.2,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-049_2026-02-19T11:24:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": null,
+        "location": "Right buttock",
+        "length_cm": 3.8,
+        "width_cm": 4.1,
+        "depth_cm": 0.9,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-050_2026-01-13T11:31:00": {
+    "wounds": [
+      {
+        "wound_type": "Arterial",
+        "stage": null,
+        "location": "Right lower extremity",
+        "length_cm": 0.7,
+        "width_cm": 2.5,
+        "depth_cm": 0.7,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-051_2025-11-19T19:12:00": {
+    "wounds": [
+      {
+        "wound_type": "Abscess",
+        "stage": "N",
+        "location": "Right cervical",
+        "length_cm": 0.9,
+        "width_cm": 1.4,
+        "depth_cm": null,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-052_2026-01-11T01:10:00": {
+    "wounds": [
+      {
+        "wound_type": "Surgical",
+        "stage": "N",
+        "location": "Abdominal wall",
+        "length_cm": 2.8,
+        "width_cm": 3.2,
+        "depth_cm": null,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-053_2026-02-09T08:51:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "Stage 3",
+        "location": "Right buttock",
+        "length_cm": 6.7,
+        "width_cm": 4.5,
+        "depth_cm": 1.5,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-055_2026-02-11T16:28:00": {
+    "wounds": [
+      {
+        "wound_type": "Abscess",
+        "stage": null,
+        "location": "Left Right cervical",
+        "length_cm": 0.5,
+        "width_cm": 1.5,
+        "depth_cm": 0.4,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-056_2025-12-24T05:33:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": "N",
+        "location": "Left foot",
+        "length_cm": 5.2,
+        "width_cm": 1.7,
+        "depth_cm": null,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-057_2025-12-15T03:26:00": {
+    "wounds": [
+      {
+        "wound_type": "Abscess",
+        "stage": "N",
+        "location": "Right cervical",
+        "length_cm": 0.8,
+        "width_cm": 0.8,
+        "depth_cm": null,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-059_2026-02-07T03:52:00": {
+    "wounds": [
+      {
+        "wound_type": "Abscess",
+        "stage": null,
+        "location": "Right cervical",
+        "length_cm": 1.6,
+        "width_cm": 1.1,
+        "depth_cm": 0.4,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-060_2026-03-18T18:32:00": {
+    "wounds": [
+      {
+        "wound_type": "Venous",
+        "stage": null,
+        "location": "Bilateral Left lower leg",
+        "length_cm": 3.5,
+        "width_cm": 5.4,
+        "depth_cm": 0.7,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-066_2025-12-02T12:11:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": null,
+        "location": "Right buttock",
+        "length_cm": 4.7,
+        "width_cm": 4.4,
+        "depth_cm": 1.5,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-067_2026-04-13T21:48:00": {
+    "wounds": [
+      {
+        "wound_type": "Surgical",
+        "stage": null,
+        "location": "Bilateral Abdominal wall",
+        "length_cm": 4.8,
+        "width_cm": 1.0,
+        "depth_cm": 1.9,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-068_2026-01-09T15:49:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "Stage 2",
+        "location": "Left buttock",
+        "length_cm": 4.0,
+        "width_cm": 2.2,
+        "depth_cm": 0.3,
+        "drainage_amount": "none",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-069_2026-04-04T16:22:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": null,
+        "location": "Right Sacral region",
+        "length_cm": 3.4,
+        "width_cm": 2.1,
+        "depth_cm": 1.7,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-070_2026-03-03T04:40:00": {
+    "wounds": [
+      {
+        "wound_type": "Burn",
+        "stage": null,
+        "location": "Left upper arm",
+        "length_cm": 2.6,
+        "width_cm": 3.5,
+        "depth_cm": 0.2,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-071_2025-12-16T01:59:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Bilateral Left foot",
+        "length_cm": 2.8,
+        "width_cm": 3.9,
+        "depth_cm": 1.6,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-072_2025-12-25T22:44:00": {
+    "wounds": [
+      {
+        "wound_type": "Venous",
+        "stage": null,
+        "location": "Right Left lower leg",
+        "length_cm": 2.5,
+        "width_cm": 4.5,
+        "depth_cm": 0.2,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-077_2026-01-11T07:41:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Bilateral Left foot",
+        "length_cm": 4.3,
+        "width_cm": 4.7,
+        "depth_cm": 1.2,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-079_2026-01-01T02:54:00": {
+    "wounds": [
+      {
+        "wound_type": "Surgical",
+        "stage": null,
+        "location": "Left Abdominal wall",
+        "length_cm": 2.1,
+        "width_cm": 3.3,
+        "depth_cm": 1.1,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-080_2026-01-17T09:21:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Bilateral Left plantar",
+        "length_cm": 2.1,
+        "width_cm": 2.0,
+        "depth_cm": 1.3,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-083_2025-12-24T09:18:00": {
+    "wounds": [
+      {
+        "wound_type": "Arterial",
+        "stage": "N",
+        "location": "Right lower extremity",
+        "length_cm": 1.6,
+        "width_cm": 1.7,
+        "depth_cm": null,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-088_2026-01-31T04:55:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Right Left plantar",
+        "length_cm": 1.9,
+        "width_cm": 3.2,
+        "depth_cm": 1.2,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-089_2026-02-28T13:29:00": {
+    "wounds": [
+      {
+        "wound_type": "Venous",
+        "stage": null,
+        "location": "Left lower leg",
+        "length_cm": 3.6,
+        "width_cm": 3.1,
+        "depth_cm": 0.1,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-091_2026-04-08T02:47:00": {
+    "wounds": [
+      {
+        "wound_type": "Venous",
+        "stage": "N",
+        "location": "Right lower leg",
+        "length_cm": 3.6,
+        "width_cm": 4.5,
+        "depth_cm": null,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-096_2025-11-29T14:14:00": {
+    "wounds": [
+      {
+        "wound_type": "Venous",
+        "stage": null,
+        "location": "Bilateral Right lower leg",
+        "length_cm": 5.2,
+        "width_cm": 2.3,
+        "depth_cm": 0.4,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-098_2026-04-05T07:09:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Left foot",
+        "length_cm": 4.7,
+        "width_cm": 2.1,
+        "depth_cm": 2.0,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-099_2026-01-01T08:52:00": {
+    "wounds": [
+      {
+        "wound_type": "Surgical",
+        "stage": null,
+        "location": "Left Abdominal wall",
+        "length_cm": 3.8,
+        "width_cm": 1.0,
+        "depth_cm": 1.7,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-100_2026-01-22T10:20:00": {
+    "wounds": [
+      {
+        "wound_type": "Arterial",
+        "stage": "N",
+        "location": "Right lower extremity",
+        "length_cm": 1.3,
+        "width_cm": 1.1,
+        "depth_cm": null,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-108_2025-11-22T11:55:00": {
+    "wounds": [
+      {
+        "wound_type": "Burn",
+        "stage": null,
+        "location": "Left upper arm",
+        "length_cm": 1.6,
+        "width_cm": 4.0,
+        "depth_cm": 0.1,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-109_2025-11-22T21:53:00": {
+    "wounds": [
+      {
+        "wound_type": "Surgical",
+        "stage": "N",
+        "location": "Abdominal wall",
+        "length_cm": 1.1,
+        "width_cm": 1.8,
+        "depth_cm": null,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-110_2026-01-24T17:13:00": {
+    "wounds": [
+      {
+        "wound_type": "Venous",
+        "stage": null,
+        "location": "Left Right lower leg",
+        "length_cm": 2.4,
+        "width_cm": 4.5,
+        "depth_cm": 0.1,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-111_2026-01-31T16:28:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Bilateral Left plantar",
+        "length_cm": 1.9,
+        "width_cm": 1.9,
+        "depth_cm": 0.7,
+        "drainage_amount": "none",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-118_2026-01-22T11:20:00": {
+    "wounds": [
+      {
+        "wound_type": "Venous",
+        "stage": null,
+        "location": "Right lower leg",
+        "length_cm": 6.1,
+        "width_cm": 2.4,
+        "depth_cm": 0.2,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-119_2026-04-07T02:06:00": {
+    "wounds": [
+      {
+        "wound_type": "Arterial",
+        "stage": "N",
+        "location": "Right lower extremity",
+        "length_cm": 2.4,
+        "width_cm": 0.5,
+        "depth_cm": null,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FA-120_2026-02-27T01:12:00": {
+    "wounds": [
+      {
+        "wound_type": "Surgical",
+        "stage": null,
+        "location": "Right Abdominal wall",
+        "length_cm": 3.7,
+        "width_cm": 3.1,
+        "depth_cm": 1.1,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-006_2026-05-17T09:35:00": {
+    "wounds": [
+      {
+        "wound_type": "Venous",
+        "stage": null,
+        "location": "Left lower leg",
+        "length_cm": 3.2,
+        "width_cm": 3.7,
+        "depth_cm": 0.4,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-008_2026-05-17T06:11:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Left foot",
+        "length_cm": 4.3,
+        "width_cm": 2.4,
+        "depth_cm": 1.2,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-012_2026-04-05T17:53:00": {
+    "wounds": [
+      {
+        "wound_type": "Burn",
+        "stage": "N",
+        "location": "Left upper arm",
+        "length_cm": 1.3,
+        "width_cm": 2.3,
+        "depth_cm": null,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-014_2025-11-27T23:16:00": {
+    "wounds": [
+      {
+        "wound_type": "Abscess",
+        "stage": "N",
+        "location": "Right cervical",
+        "length_cm": 2.0,
+        "width_cm": 0.2,
+        "depth_cm": null,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-015_2025-12-17T00:12:00": {
+    "wounds": [
+      {
+        "wound_type": "Arterial",
+        "stage": "N",
+        "location": "Right lower extremity",
+        "length_cm": 0.6,
+        "width_cm": 1.2,
+        "depth_cm": null,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-016_2026-02-18T07:19:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Right plantar",
+        "length_cm": 3.8,
+        "width_cm": 3.5,
+        "depth_cm": 0.8,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-019_2025-11-28T08:58:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Right Left plantar",
+        "length_cm": 4.8,
+        "width_cm": 3.5,
+        "depth_cm": 0.8,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-020_2026-01-01T03:02:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Right plantar",
+        "length_cm": 3.5,
+        "width_cm": 3.2,
+        "depth_cm": 1.0,
+        "drainage_amount": "none",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-021_2026-01-31T23:13:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "3",
+        "location": "Right buttock",
+        "length_cm": 2.9,
+        "width_cm": 4.4,
+        "depth_cm": null,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-026_2026-03-20T13:50:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "2",
+        "location": "Left heel",
+        "length_cm": 2.7,
+        "width_cm": 3.2,
+        "depth_cm": null,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-027_2026-01-31T07:09:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": "N",
+        "location": "Left plantar",
+        "length_cm": 3.7,
+        "width_cm": 2.6,
+        "depth_cm": null,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-028_2026-03-08T15:17:00": {
+    "wounds": [
+      {
+        "wound_type": "Arterial",
+        "stage": null,
+        "location": "Left Right lower extremity",
+        "length_cm": 1.1,
+        "width_cm": 2.2,
+        "depth_cm": 0.6,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-029_2025-11-20T00:36:00": {
+    "wounds": [
+      {
+        "wound_type": "Burn",
+        "stage": null,
+        "location": "Left upper arm",
+        "length_cm": 5.8,
+        "width_cm": 2.6,
+        "depth_cm": 0.1,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-031_2025-12-24T08:05:00": {
+    "wounds": [
+      {
+        "wound_type": "Abscess",
+        "stage": null,
+        "location": "Bilateral Right cervical",
+        "length_cm": 1.6,
+        "width_cm": 0.5,
+        "depth_cm": 0.4,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-032_2026-02-22T14:14:00": {
+    "wounds": [
+      {
+        "wound_type": "Surgical",
+        "stage": null,
+        "location": "Right Abdominal wall",
+        "length_cm": 4.9,
+        "width_cm": 1.6,
+        "depth_cm": 1.1,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-033_2025-12-04T10:51:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": "N",
+        "location": "Left plantar",
+        "length_cm": 4.3,
+        "width_cm": 3.2,
+        "depth_cm": null,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-034_2026-02-05T18:07:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "4",
+        "location": "Left heel",
+        "length_cm": 7.4,
+        "width_cm": 5.1,
+        "depth_cm": null,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-035_2026-02-23T22:09:00": {
+    "wounds": [
+      {
+        "wound_type": "Surgical",
+        "stage": null,
+        "location": "Bilateral Abdominal wall",
+        "length_cm": 3.4,
+        "width_cm": 1.1,
+        "depth_cm": 0.7,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-037_2026-03-02T17:49:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "3",
+        "location": "Right hip",
+        "length_cm": 2.5,
+        "width_cm": 2.4,
+        "depth_cm": null,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-038_2026-03-10T00:16:00": {
+    "wounds": [
+      {
+        "wound_type": "Venous",
+        "stage": null,
+        "location": "Right Left lower leg",
+        "length_cm": 2.8,
+        "width_cm": 3.8,
+        "depth_cm": 0.7,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-043_2026-01-14T02:27:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Left foot",
+        "length_cm": 3.7,
+        "width_cm": 2.1,
+        "depth_cm": 1.3,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-044_2026-04-01T22:34:00": {
+    "wounds": [
+      {
+        "wound_type": "Venous",
+        "stage": null,
+        "location": "Left lower leg",
+        "length_cm": 6.9,
+        "width_cm": 1.7,
+        "depth_cm": 0.2,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-056_2025-11-30T16:00:00": {
+    "wounds": [
+      {
+        "wound_type": "Burn",
+        "stage": "N",
+        "location": "Left upper arm",
+        "length_cm": 1.1,
+        "width_cm": 3.5,
+        "depth_cm": null,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-058_2025-12-25T21:08:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Left foot",
+        "length_cm": 2.2,
+        "width_cm": 1.8,
+        "depth_cm": 1.5,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-061_2026-04-01T17:34:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Left plantar",
+        "length_cm": 4.9,
+        "width_cm": 3.0,
+        "depth_cm": 1.1,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-065_2026-03-13T15:13:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": null,
+        "location": "Bilateral Left buttock",
+        "length_cm": 4.8,
+        "width_cm": 3.3,
+        "depth_cm": 1.4,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-066_2026-04-03T15:12:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "Stage 2",
+        "location": "Left heel",
+        "length_cm": 2.1,
+        "width_cm": 2.2,
+        "depth_cm": 0.4,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-067_2025-12-15T11:13:00": {
+    "wounds": [
+      {
+        "wound_type": "Arterial",
+        "stage": "N",
+        "location": "Right lower extremity",
+        "length_cm": 2.3,
+        "width_cm": 1.1,
+        "depth_cm": null,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-069_2026-02-05T19:13:00": {
+    "wounds": [
+      {
+        "wound_type": "Surgical",
+        "stage": null,
+        "location": "Right Abdominal wall",
+        "length_cm": 4.4,
+        "width_cm": 2.6,
+        "depth_cm": 1.4,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-072_2026-01-15T06:50:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Bilateral Left foot",
+        "length_cm": 2.6,
+        "width_cm": 3.2,
+        "depth_cm": 1.0,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-078_2026-04-08T23:57:00": {
+    "wounds": [
+      {
+        "wound_type": "Surgical",
+        "stage": "N",
+        "location": "Abdominal wall",
+        "length_cm": 2.0,
+        "width_cm": 2.4,
+        "depth_cm": null,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-079_2026-01-31T00:30:00": {
+    "wounds": [
+      {
+        "wound_type": "Burn",
+        "stage": null,
+        "location": "Bilateral Left upper arm",
+        "length_cm": 5.5,
+        "width_cm": 4.0,
+        "depth_cm": 0.2,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-080_2026-01-31T16:42:00": {
+    "wounds": [
+      {
+        "wound_type": "Abscess",
+        "stage": null,
+        "location": "Left Right cervical",
+        "length_cm": 0.6,
+        "width_cm": 0.3,
+        "depth_cm": 0.2,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-083_2026-03-23T14:38:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "Stage 3",
+        "location": "Left heel",
+        "length_cm": 5.2,
+        "width_cm": 2.6,
+        "depth_cm": 1.6,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-084_2026-03-17T18:11:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Left foot",
+        "length_cm": 4.5,
+        "width_cm": 2.0,
+        "depth_cm": 1.9,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-085_2026-02-20T22:13:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "Stage 4",
+        "location": "Sacral region",
+        "length_cm": 8.2,
+        "width_cm": 6.3,
+        "depth_cm": 1.7,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-087_2026-04-06T13:55:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": "N",
+        "location": "Left plantar",
+        "length_cm": 3.9,
+        "width_cm": 3.9,
+        "depth_cm": null,
+        "drainage_amount": "none",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-088_2026-02-03T12:21:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": "N",
+        "location": "Left foot",
+        "length_cm": 4.3,
+        "width_cm": 5.0,
+        "depth_cm": null,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FB-089_2026-02-04T11:34:00": {
+    "wounds": [
+      {
+        "wound_type": "Arterial",
+        "stage": null,
+        "location": "Right lower extremity",
+        "length_cm": 2.2,
+        "width_cm": 1.5,
+        "depth_cm": 0.4,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-001_2026-05-17T17:38:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Left foot",
+        "length_cm": 4.3,
+        "width_cm": 4.4,
+        "depth_cm": 1.3,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-002_2026-05-15T06:00:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": "N",
+        "location": "Right plantar",
+        "length_cm": 3.6,
+        "width_cm": 2.3,
+        "depth_cm": null,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-003_2026-05-16T06:36:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "Stage 3",
+        "location": "Left Right buttock",
+        "length_cm": 6.2,
+        "width_cm": 4.5,
+        "depth_cm": 2.0,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-005_2026-05-16T21:29:00": {
+    "wounds": [
+      {
+        "wound_type": "Surgical",
+        "stage": null,
+        "location": "Left Abdominal wall",
+        "length_cm": 1.0,
+        "width_cm": 1.4,
+        "depth_cm": 1.3,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-006_2026-05-16T01:25:00": {
+    "wounds": [
+      {
+        "wound_type": "Surgical",
+        "stage": "N",
+        "location": "Abdominal wall",
+        "length_cm": 1.8,
+        "width_cm": 3.5,
+        "depth_cm": null,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-008_2026-05-15T06:00:00": {
+    "wounds": [
+      {
+        "wound_type": "Venous",
+        "stage": null,
+        "location": "Left lower leg",
+        "length_cm": 1.6,
+        "width_cm": 3.3,
+        "depth_cm": 0.7,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-009_2026-05-17T14:56:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": "N",
+        "location": "Left plantar",
+        "length_cm": 3.3,
+        "width_cm": 1.2,
+        "depth_cm": null,
+        "drainage_amount": "none",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-012_2026-01-28T02:56:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "Stage 4",
+        "location": "Right buttock",
+        "length_cm": 4.1,
+        "width_cm": 7.9,
+        "depth_cm": 3.7,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-014_2026-04-15T09:58:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": null,
+        "location": "Right buttock",
+        "length_cm": 3.7,
+        "width_cm": 3.8,
+        "depth_cm": 0.3,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-015_2025-11-25T10:17:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Left Right plantar",
+        "length_cm": 1.8,
+        "width_cm": 1.8,
+        "depth_cm": 0.6,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-016_2026-03-22T13:22:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "Stage 3",
+        "location": "Right Left hip",
+        "length_cm": 5.8,
+        "width_cm": 2.2,
+        "depth_cm": 0.9,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-017_2026-03-24T05:29:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Right plantar",
+        "length_cm": 2.7,
+        "width_cm": 0.9,
+        "depth_cm": 0.8,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-026_2026-02-18T09:40:00": {
+    "wounds": [
+      {
+        "wound_type": "Abscess",
+        "stage": null,
+        "location": "Right cervical",
+        "length_cm": 0.8,
+        "width_cm": 0.9,
+        "depth_cm": 0.7,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-027_2026-01-01T15:12:00": {
+    "wounds": [
+      {
+        "wound_type": "Venous",
+        "stage": null,
+        "location": "Left Right lower leg",
+        "length_cm": 1.7,
+        "width_cm": 1.8,
+        "depth_cm": 0.2,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-028_2026-03-25T16:41:00": {
+    "wounds": [
+      {
+        "wound_type": "Venous",
+        "stage": "N",
+        "location": "Left lower leg",
+        "length_cm": 3.6,
+        "width_cm": 1.9,
+        "depth_cm": null,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-029_2026-02-25T14:24:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Left foot",
+        "length_cm": 2.4,
+        "width_cm": 4.0,
+        "depth_cm": 1.8,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-032_2025-12-11T11:10:00": {
+    "wounds": [
+      {
+        "wound_type": "Venous",
+        "stage": null,
+        "location": "Bilateral Left lower leg",
+        "length_cm": 3.1,
+        "width_cm": 2.4,
+        "depth_cm": 0.2,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-036_2026-03-06T23:10:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": null,
+        "location": "Bilateral Sacral region",
+        "length_cm": 5.9,
+        "width_cm": 2.0,
+        "depth_cm": 1.7,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-038_2026-03-25T06:43:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "N",
+        "location": "Left buttock",
+        "length_cm": 4.3,
+        "width_cm": 4.8,
+        "depth_cm": null,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-041_2026-01-20T09:35:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "Stage 4",
+        "location": "Bilateral Right heel",
+        "length_cm": 9.1,
+        "width_cm": 5.2,
+        "depth_cm": 3.3,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-042_2026-02-19T19:29:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": null,
+        "location": "Left Sacral region",
+        "length_cm": 3.7,
+        "width_cm": 2.5,
+        "depth_cm": 1.0,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-045_2025-12-21T04:10:00": {
+    "wounds": [
+      {
+        "wound_type": "Surgical",
+        "stage": "N",
+        "location": "Abdominal wall",
+        "length_cm": 1.9,
+        "width_cm": 2.8,
+        "depth_cm": null,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-048_2025-12-22T12:14:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "N",
+        "location": "Sacral region",
+        "length_cm": 2.8,
+        "width_cm": 3.1,
+        "depth_cm": null,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-051_2026-04-10T11:20:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "3",
+        "location": "Left buttock",
+        "length_cm": 6.3,
+        "width_cm": 3.9,
+        "depth_cm": null,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-056_2025-12-20T09:04:00": {
+    "wounds": [
+      {
+        "wound_type": "Abscess",
+        "stage": null,
+        "location": "Right cervical",
+        "length_cm": 1.1,
+        "width_cm": 1.1,
+        "depth_cm": 0.7,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-057_2026-04-12T06:22:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "Stage 2",
+        "location": "Left Right buttock",
+        "length_cm": 1.6,
+        "width_cm": 1.2,
+        "depth_cm": 0.4,
+        "drainage_amount": "none",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-058_2026-01-27T10:48:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "N",
+        "location": "Sacral region",
+        "length_cm": 2.1,
+        "width_cm": 2.8,
+        "depth_cm": null,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-060_2026-03-17T16:28:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "4",
+        "location": "Right buttock",
+        "length_cm": 4.6,
+        "width_cm": 4.1,
+        "depth_cm": null,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-062_2025-12-04T18:37:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "4",
+        "location": "Sacral region",
+        "length_cm": 5.4,
+        "width_cm": 7.7,
+        "depth_cm": null,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-065_2026-01-16T05:17:00": {
+    "wounds": [
+      {
+        "wound_type": "Abscess",
+        "stage": null,
+        "location": "Right cervical",
+        "length_cm": 1.1,
+        "width_cm": 1.4,
+        "depth_cm": 0.7,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-066_2026-01-18T04:26:00": {
+    "wounds": [
+      {
+        "wound_type": "Abscess",
+        "stage": "N",
+        "location": "Right cervical",
+        "length_cm": 1.3,
+        "width_cm": 1.0,
+        "depth_cm": null,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-067_2026-02-02T04:24:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "Stage 3",
+        "location": "Bilateral Left buttock",
+        "length_cm": 7.0,
+        "width_cm": 2.1,
+        "depth_cm": 0.9,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-070_2025-12-24T20:27:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": "N",
+        "location": "Left plantar",
+        "length_cm": 1.4,
+        "width_cm": 0.8,
+        "depth_cm": null,
+        "drainage_amount": "none",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-071_2026-04-09T06:04:00": {
+    "wounds": [
+      {
+        "wound_type": "Burn",
+        "stage": null,
+        "location": "Left upper arm",
+        "length_cm": 1.8,
+        "width_cm": 1.2,
+        "depth_cm": 0.0,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-072_2025-11-26T08:21:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Left foot",
+        "length_cm": 2.2,
+        "width_cm": 4.8,
+        "depth_cm": 1.0,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-073_2026-01-06T22:51:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "Stage 4",
+        "location": "Right Left heel",
+        "length_cm": 7.8,
+        "width_cm": 4.0,
+        "depth_cm": 3.7,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-074_2025-12-07T22:30:00": {
+    "wounds": [
+      {
+        "wound_type": "Venous",
+        "stage": null,
+        "location": "Bilateral Left lower leg",
+        "length_cm": 6.5,
+        "width_cm": 5.0,
+        "depth_cm": 0.3,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-077_2026-01-08T19:30:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "Stage 3",
+        "location": "Right Left heel",
+        "length_cm": 3.5,
+        "width_cm": 3.9,
+        "depth_cm": 0.8,
+        "drainage_amount": "moderate",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-078_2026-01-31T20:09:00": {
+    "wounds": [
+      {
+        "wound_type": "Venous",
+        "stage": null,
+        "location": "Left Right lower leg",
+        "length_cm": 5.5,
+        "width_cm": 1.8,
+        "depth_cm": 0.5,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-080_2026-03-17T20:45:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "Stage 3",
+        "location": "Left Right buttock",
+        "length_cm": 6.0,
+        "width_cm": 5.0,
+        "depth_cm": 0.5,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-081_2026-02-19T18:35:00": {
+    "wounds": [
+      {
+        "wound_type": "Surgical",
+        "stage": null,
+        "location": "Left Abdominal wall",
+        "length_cm": 4.3,
+        "width_cm": 3.2,
+        "depth_cm": 1.2,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-082_2026-03-13T00:12:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": "N",
+        "location": "Left foot",
+        "length_cm": 5.5,
+        "width_cm": 2.0,
+        "depth_cm": null,
+        "drainage_amount": "heavy",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-085_2026-02-14T11:33:00": {
+    "wounds": [
+      {
+        "wound_type": "Abscess",
+        "stage": "N",
+        "location": "Right cervical",
+        "length_cm": 1.4,
+        "width_cm": 0.7,
+        "depth_cm": null,
+        "drainage_amount": "light",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-087_2026-03-10T19:28:00": {
+    "wounds": [
+      {
+        "wound_type": "Diabetic",
+        "stage": null,
+        "location": "Left Right plantar",
+        "length_cm": 3.9,
+        "width_cm": 2.1,
+        "depth_cm": 0.3,
+        "drainage_amount": "none",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  },
+  "FC-089_2026-02-06T10:19:00": {
+    "wounds": [
+      {
+        "wound_type": "Pressure Ulcer",
+        "stage": "Stage 2",
+        "location": "Left buttock",
+        "length_cm": 3.8,
+        "width_cm": 3.2,
+        "depth_cm": 0.3,
+        "drainage_amount": "none",
+        "is_primary_wound": true
+      }
+    ],
+    "source_used": "Assessment (Structured)"
+  }
+}
