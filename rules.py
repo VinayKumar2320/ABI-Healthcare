@@ -19,9 +19,9 @@ def apply_triage_rules(row):
     """
     Applies Medicare Part B compliance filters to determine routing decision.
     """
-    # Rule 1: Payer Validation
+    # Rule 1: Payer Validation (Pre-reject on primary payer code)
     if row.get("pre_reject"):
-        return "reject", "Patient does not possess an active Medicare Part B policy."
+        return "reject", "Patient primary payer code is not Medicare Part B (Downstream ingestion skipped)."
 
     # Check coverage list for active MCB (payer_code == "MCB" and effective_to is null)
     coverage_list = row.get("coverage", [])
@@ -32,23 +32,18 @@ def apply_triage_rules(row):
             break
             
     if not has_active_mcb:
-        return "reject", "Patient does not possess an active Medicare Part B policy."
+        return "reject", "No active Medicare Part B policy found in coverage records."
 
     # Rule 2: Wound Count Validation
     wounds = row.get("extracted_wounds", [])
     if not wounds:
         return "reject", "No active wound documented in notes or assessments."
 
+    # If there are multiple wounds, we must flag it for manual review
     if len(wounds) > 1:
-        # Check if there's exactly one primary wound flagged
-        primary_wounds = [w for w in wounds if w.get("is_primary_wound")]
-        if len(primary_wounds) != 1:
-            return "flag_for_review", "Multiple wounds detected in documentation. Requires manual verification."
-        else:
-            # If there's exactly one primary wound, we evaluate that one
-            wound = primary_wounds[0]
-    else:
-        wound = wounds[0]
+        return "flag_for_review", "Multiple wounds detected in documentation. Requires manual verification."
+
+    wound = wounds[0]
 
     # Rule 3: Parameter Completeness
     missing_fields = []
@@ -59,9 +54,6 @@ def apply_triage_rules(row):
     if wound.get("depth_cm") is None:
         missing_fields.append("Depth")
     if wound.get("drainage_amount") is None or str(wound.get("drainage_amount")).lower() in ["none", "null", "nan", ""]:
-        # Wait, the rule says "documented drainage level (none / light / moderate / heavy)". 
-        # If the drainage_amount is explicitly "none", that IS a documented level.
-        # But if it's None (Python None) or missing, then it's incomplete.
         if wound.get("drainage_amount") is None:
             missing_fields.append("Drainage level")
 
