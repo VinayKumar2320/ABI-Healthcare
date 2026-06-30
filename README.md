@@ -76,7 +76,10 @@ streamlit run app.py
 By default, the dashboard will be available at **`http://localhost:8501`**.
 
 ---
+🌐 Live Demo & Walkthrough
+🚀 Live Dashboard Link: Access the Interactive Analytics Platform: https://abihealthcare.streamlit.app/#medicare-part-b-wound-care-billing-triage
 
+📺 Video Presentation: Watch the Hackathon Proof of Concept Demo on YouTube: https://youtu.be/GFzaRj2mH1w
 ## 📁 Repository Structure
 
 - `ingest.py` — SQLite-backed persistent queue ingestion script.
